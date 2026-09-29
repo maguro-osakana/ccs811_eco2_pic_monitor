@@ -1,0 +1,17 @@
+# MPLAB X build and debug output
+/build/
+/dist/
+/debug/
+
+# MPLAB X per-user and machine-specific settings
+/nbproject/private/
+/nbproject/Makefile-local-*.mk
+/nbproject/Package-*.bash
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*~
