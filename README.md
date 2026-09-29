@@ -23,6 +23,32 @@ PIC16F1827 と CCS811 を使用し、CCS811 が算出する CO2 換算値（eCO2
 
 回路図は [co2pic.pdf](co2pic.pdf)、ネットリストは [co2pic.net](co2pic.net) です。諸事情により、レイアウトデータはありません。
 
+## 部品表（BOM）
+
+
+| 参照番号 | 部品・仕様 | メーカー | 型番 | 備考 |
+| --- | --- | --- | --- | --- |
+| C1 | チップ積層セラミックコンデンサ 1005 2.2 µF | 村田 | GRM155R6YA225KE11 | 回路図およびシルクは 0.47 µF と記載 |
+| C2 | チップ積層セラミックコンデンサ 1005 0.1 µF | 村田 | GRM155F11E104ZA01 | |
+| C3 | チップ積層セラミックコンデンサ 1005 0.1 µF | 村田 | GRM155F11E104ZA01 | |
+| C4 | チップ積層セラミックコンデンサ 1005 2.2 µF | 村田 | GRM155R6YA225KE11 | |
+| C5 | チップ積層セラミックコンデンサ 1005 0.1 µF | 村田 | GRM155F11E104ZA01 | |
+| C6 | チップ積層セラミックコンデンサ 1005 0.1 µF | 村田 | GRM155F11E104ZA01 | |
+| DS1 | 3.3 V キャラクタ液晶モジュール | Sunlike Display Tech. Corp. | SC1602BBWB-XA-LB-G | [販売ページ](http://akizukidenshi.com/catalog/g/gP-04794/) |
+| J1 | 2.54 mm ピンヘッダ 1×6 ピン | ？ | ？ | [販売ページ](http://akizukidenshi.com/catalog/g/gC-00167/) |
+| J2 | 2.1 mm 標準 DC ジャック（4 A）、基板取付用 | マル信無線電機株式会社 | MJ-179PH | |
+| J3 | 2.54 mm ピンヘッダ 1×4 ピン | ？ | ？ | [販売ページ](http://akizukidenshi.com/catalog/g/gC-00167/) |
+| J4 | 2.54 mm ピンヘッダ 1×5 ピン | ？ | ？ | [販売ページ](http://akizukidenshi.com/catalog/g/gC-00167/) |
+| R1 | チップ抵抗 1005 4.7 kΩ | ？ | ？ | |
+| R2 | チップ抵抗 1005 10 Ω | ？ | ？ | |
+| R3 | 1/4 W リード抵抗 47 kΩ | ？ | ？ | JP13 と JP14 の上に実装 |
+| RV1 | 半固定ボリューム 20 kΩ | SUNTAN TECHNOLOGY CO LTD | TSR-065-203-R | |
+| SW1 | タクトスイッチ | Cosland Co,. Ltd. | DTS-6-V | |
+| SW2 | タクトスイッチ | Cosland Co,. Ltd. | DTS-6-V | |
+| U1 | PIC16F1827-IP_PDIP | Microchip | PIC16F1827-IP_PDIP | |
+| U2 | CO2 センサ基板 | 南京峙溱电子科技有限公司？ | CJMCU811 | [製品ページ](http://www.cjmcu.com/goods.php?id=81) |
+| U3 | LDO 3.3 V | 新日本無線 | NJM2845DL1-33 | |
+
 ## ビルド
 
 1. MPLAB X IDE でこのディレクトリを既存プロジェクトとして開きます。
