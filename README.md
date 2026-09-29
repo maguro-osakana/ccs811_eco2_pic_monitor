@@ -9,18 +9,6 @@ PIC16F1827 と CCS811 を使用し、CCS811 が算出する CO2 換算値（eCO2
 - 表示器: 16 文字×2 行のキャラクター LCD（4 ビット接続）
 - 操作: スイッチ 1 個、UART コマンド
 
-主な信号の割り当ては `mcc_generated_files/pin_manager.h` に定義されています。
-
-| 信号 | PIC 端子 |
-| --- | --- |
-| LCD D4 / D5 / D6 / D7 | RA0 / RA3 / RA7 / RA4 |
-| LCD RS / E | RA1 / RA2 |
-| 操作スイッチ | RA6 |
-| CCS811 nWAKE / nRESET | RB0 / RB3 |
-| I2C SDA / SCL | RB1 / RB4 |
-
-電源、プルアップ抵抗、LCD のコントラスト調整などは、使用する部品の仕様に合わせて配線してください。
-
 回路図は [co2pic.pdf](co2pic.pdf)、ネットリストは [co2pic.net](co2pic.net) です。諸事情により、レイアウトデータはありません。
 
 ## 部品表（BOM）
